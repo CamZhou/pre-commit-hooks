@@ -140,4 +140,4 @@
     description: This hook trims trailing whitespace.
     entry: trailing-whitespace-fixer
     language: python
-    files: \.(asciidoc|adoc|coffee|cpp|css|c|ejs|erb|h|haml|hh|hpp|hxx|html|in|jade|json|js|less|markdown|md|ml|mli|pp|py|rb|rs|R|scss|sh|slim|tmpl|txt|yaml|yml)$
+    files: \.(asciidoc|adoc|coffee|cpp|css|cls|c|ejs|erb|h|haml|hh|hpp|hxx|html|in|jade|json|js|less|markdown|md|ml|mli|pp|py|rb|rs|R|scss|sh|slim|tmpl|txt|yaml|yml)$
