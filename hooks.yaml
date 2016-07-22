@@ -146,8 +146,7 @@
     description: This hook ensures that there is whitespace following a comma.
     entry: comma-whitespace-fixer
     language: python
-    files: \.(cls)$
-    files: \.(asciidoc|adoc|coffee|cpp|css|cls|c|ejs|erb|h|haml|hh|hpp|hxx|html|in|jade|json|js|less|markdown|md|ml|mli|pp|py|rb|rs|R|scss|sh|slim|tmpl|txt|yaml|yml)$
+    files: \.cls$
 -   id: white-space-fixer
     name: Add Middle Whitespace
     description: This hook add middle whitespace.
