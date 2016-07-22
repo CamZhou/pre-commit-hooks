@@ -141,7 +141,7 @@
     entry: trailing-whitespace-fixer
     language: python
     files: \.(asciidoc|adoc|coffee|cpp|cls|css|c|ejs|erb|h|haml|hh|hpp|hxx|html|in|jade|json|js|less|markdown|md|ml|mli|pp|py|rb|rs|R|scss|sh|slim|tmpl|txt|yaml|yml)$
--   id: comma-whitespace
+-   id: comma-whitespace-fixer
     name: Retain Comma Whitespace
     description: This hook ensures that there is whitespace following a comma.
     entry: comma-whitespace-fixer
