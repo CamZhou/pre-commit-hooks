@@ -8,6 +8,7 @@ import io
 
 def fix_strings(filename):
     contents = io.open(filename).read()
+    contents_copy = contents
     new_contents = ''
 
     replacement_dict = {
@@ -21,15 +22,16 @@ def fix_strings(filename):
     }
 
     for key in replacement_dict.keys():
-        for line in contents.splitlines():
+        for line in contents_copy.splitlines():
             if key in line:
                 line = line.replace(key, replacement_dict[key])
-                new_contents += line
-        new_contents += line + '\n'
+            new_contents += line + '\n'
+        contents_copy = new_contents
+        new_contents = ''
 
-    if contents != new_contents:
+    if contents != contents_copy:
         with io.open(filename, 'w') as write_handle:
-            write_handle.write(new_contents)
+            write_handle.write(contents_copy)
         return 1
     else:
         return 0

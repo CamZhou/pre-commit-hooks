@@ -147,3 +147,9 @@
     entry: white-space-fixer
     language: python
     files: \.cls$
+-   id: colon-whitespace-fixer
+    name: Remove Whitespace after colon in query
+    description: This remove whitespace after colon in soql query.
+    entry: colon-whitespace-fixer
+    language: python
+    files: \.cls$

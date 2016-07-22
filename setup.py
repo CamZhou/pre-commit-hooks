@@ -58,6 +58,7 @@ setup(
             'requirements-txt-fixer = pre_commit_hooks.requirements_txt_fixer:fix_requirements_txt',
             'trailing-whitespace-fixer = pre_commit_hooks.trailing_whitespace_fixer:fix_trailing_whitespace',
             'white-space-fixer = pre_commit_hooks.white_space_fixer:main',
+            'colon-whitespace-fixer = pre_commit_hooks.colon_whitespace_fixer:main',
         ],
     },
 )
