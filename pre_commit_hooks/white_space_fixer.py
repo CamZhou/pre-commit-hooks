@@ -20,8 +20,8 @@ def fix_strings(filename):
         '){': ') {',
     }
 
-    for line in contents.splitlines():
-        for key in replacement_dict.keys():
+    for key in replacement_dict.keys():
+        for line in contents.splitlines():
             if key in line:
                 line = line.replace(key, replacement_dict[key])
                 new_contents += line
