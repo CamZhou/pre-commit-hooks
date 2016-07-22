@@ -61,6 +61,7 @@ Add this to your `.pre-commit-config.yaml`
       `args: ['--markdown-linebreak-ext=*']` to preserve them for all files,
       or `args: ['--no-markdown-linebreak-ext']` to disable and always trim.
 -   `comma-whitespace` - This hook ensures that there is whitespace following a comma.
+- `middle-whitespace` - add whitespace.
 
 ### As a standalone package
 
