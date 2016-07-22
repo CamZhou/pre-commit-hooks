@@ -9,15 +9,16 @@ import re
 from pre_commit_hooks.util import cmd_output
 
 
-def _fix_file(filename):
+def _fix_file(filename, markdown=False):
     for line in fileinput.input([filename], inplace=True):
-        line = re.sub(r':\s+', ':', line)
-        print(line)
+        if markdown:
+            line = re.sub(r':\s+', ':', line)
+            print(line)
 
 def fix_colon_whitespace(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        '--no-markdown-linebreak-ext',
+        '--no-markdown-linebreak-ext', 
         action='store_const',
         const=[],
         default=argparse.SUPPRESS,
