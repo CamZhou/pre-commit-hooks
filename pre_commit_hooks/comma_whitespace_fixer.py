@@ -15,7 +15,7 @@ def _fix_file(filename, markdown=False):
         matches = re.findall(',^[[:space:]]')
 
         for match in matches:
-            re.replace(match, match[0] + " " + match[-1], line)
+            line.replace(match, match[0] + " " + match[1:])
 
         print(line)
 
