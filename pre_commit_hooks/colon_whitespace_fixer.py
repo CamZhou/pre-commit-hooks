@@ -70,5 +70,6 @@ def fix_colon_whitespace(argv=None):
         return 0
 
 
+
 if __name__ == '__main__':
     sys.exit(fix_colon_whitespace())
