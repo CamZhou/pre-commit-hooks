@@ -60,6 +60,7 @@ Add this to your `.pre-commit-config.yaml`
       use `args: ['--markdown-linebreak-ext=txt,text']` to add other extensions,
       `args: ['--markdown-linebreak-ext=*']` to preserve them for all files,
       or `args: ['--no-markdown-linebreak-ext']` to disable and always trim.
+- `middle-whitespace` - add whitespace.
 
 ### As a standalone package
 
