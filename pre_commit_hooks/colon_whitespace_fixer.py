@@ -15,7 +15,7 @@ def fix_file(filename):
             #if 'where' in line:
                 # if there is space btw : and var name
                 line = re.sub(r':\s+', ':', line)
-                print(line)
+    print(line.rstrip())
 
 def main(argv=None):
     parser = argparse.ArgumentParser()
