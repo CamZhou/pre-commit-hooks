@@ -11,11 +11,8 @@ from pre_commit_hooks.util import cmd_output
 
 def _fix_file(filename):
     for line in fileinput.input([filename], inplace=True):
-        # preserve trailing two-space for non-blank lines in markdown files
-            #if 'where' in line:
-                # if there is space btw : and var name
-                line = re.sub(r':\s+', ':', line)
-    print(line)
+        line = re.sub(r':\s+', ':', line)
+        print(line)
 
 def fix_colon_whitespace(argv=None):
     parser = argparse.ArgumentParser()
