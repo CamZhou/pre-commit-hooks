@@ -25,7 +25,7 @@ def fix_strings(filename):
             if key in line:
                 line = line.replace(key, replacement_dict[key])
                 new_contents += line
-        new_contents += line
+        new_contents += line + '\n'
 
     if contents != new_contents:
         with io.open(filename, 'w') as write_handle:
